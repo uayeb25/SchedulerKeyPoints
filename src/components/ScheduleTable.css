@@ -1,0 +1,231 @@
+.schedule-table-container {
+  margin-top: 20px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.table-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.table-info h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.schedule-count {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.table-description {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border: 2px dashed #ddd;
+}
+
+.empty-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.empty-state p {
+  color: #666;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.schedules-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.schedules-table thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.schedules-table th {
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.schedules-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.schedules-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.schedules-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.report-id-column {
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #666;
+}
+
+.frequency-badge {
+  background-color: #e3f2fd;
+  color: #1976d2;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.days-column {
+  font-size: 13px;
+  color: #666;
+  max-width: 200px;
+}
+
+.time-column {
+  font-weight: 500;
+  color: #333;
+}
+
+.timezone-badge {
+  background-color: #fff3e0;
+  color: #e65100;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.recipients-column {
+  color: #666;
+  font-size: 13px;
+}
+
+.filters-column {
+  text-align: center;
+}
+
+.view-filters-btn {
+  background: none;
+  border: 1px solid #ddd;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.view-filters-btn:hover {
+  background-color: #f5f5f5;
+  border-color: #999;
+  color: #333;
+}
+
+.actions-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.edit-btn:hover {
+  background-color: #e3f2fd;
+}
+
+.date-column {
+  color: #666;
+  font-size: 13px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.delete-btn:hover {
+  background-color: #ffebee;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .schedules-table {
+    font-size: 12px;
+  }
+  
+  .schedules-table th,
+  .schedules-table td {
+    padding: 12px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: scroll;
+  }
+  
+  .schedules-table {
+    min-width: 1200px;
+  }
+}

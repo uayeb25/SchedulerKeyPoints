@@ -1,0 +1,166 @@
+.progress-report-container {
+  max-width: 100%;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: none;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.back-button:hover {
+  color: #1a73e8;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  color: #333;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-menu span {
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-menu span:hover {
+  color: #1a73e8;
+}
+
+.nav-menu span.active {
+  color: #1a73e8;
+  font-weight: 600;
+}
+
+.nav-menu span.active::after {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #1a73e8;
+}
+
+.user-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.cluster-info {
+  padding: 6px 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-name {
+  padding: 6px 12px;
+  background-color: transparent;
+  border-radius: 4px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.content {
+  background: linear-gradient(135deg, #84d8d8 0%, #6ec9c9 100%);
+  padding: 40px 30px;
+  min-height: calc(100vh - 60px);
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.title-section h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+.kp-badge {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+  color: #666;
+}
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
+.tab.active {
+  background-color: white;
+  color: #333;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-maker-placeholder {
+  padding: 40px;
+  text-align: center;
+  color: #999;
+}
