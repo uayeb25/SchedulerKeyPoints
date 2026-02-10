@@ -69,6 +69,9 @@ const FiltersModal = ({ isOpen, onClose, schedule }) => {
           <div className="filter-section">
             <label className="filter-label">📅 Date Range</label>
             <div className="filter-value">{filtersData.dateRange}</div>
+            <div className="filter-warning">
+              ⚠️ Date range end date will be adjusted based on scheduled executions
+            </div>
           </div>
 
           <div className="filter-section">

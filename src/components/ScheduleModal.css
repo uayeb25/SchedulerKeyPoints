@@ -247,6 +247,20 @@
   margin-bottom: 0;
 }
 
+.warning-message {
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 6px;
+  padding: 12px 14px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #856404;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
 .days-of-month-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);

@@ -267,6 +267,9 @@ const ScheduleModal = ({ isOpen, onClose, reportId, onScheduleCreated, editingSc
                   <option key={tz.value} value={tz.value}>{tz.label}</option>
                 ))}
               </select>
+              <div className="warning-message">
+                ⚠️ The selected time indicates when the report generation process will begin. Actual completion time may vary depending on the complexity of applied filters and data volume.
+              </div>
             </div>
 
             <div className="form-group">
